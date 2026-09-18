@@ -1,17 +1,21 @@
 # confluent_redis_kafka_connector
 
-Offline zip of the Redis Kafka Connect connector plugin, version **0.9.1**.
+Offline zip of the Redis Kafka Connect connector plugin **0.9.1**.
 
-## File
+## Layout
 
-`redis-redis-kafka-connect-0.9.1.zip`
-
-Install into a Kafka Connect plugin path (Confluent/Connect worker):
-
-```bash
-unzip redis-redis-kafka-connect-0.9.1.zip -d /usr/share/java/kafka-connect-plugins/
+```
+packages/redis-redis-kafka-connect-0.9.1.zip
+GROUP.md
+README.md
 ```
 
-Then restart the Connect worker and confirm the connector class is listed on `/connector-plugins`.
+```bash
+unzip packages/redis-redis-kafka-connect-0.9.1.zip -d /usr/share/java/kafka-connect-plugins/
+```
 
-Bulk-export of connector configs (without secrets): [kafka-connect_connector_config_bulk_export](https://github.com/nwlterry/kafka-connect_connector_config_bulk_export).
+Then restart Connect and check `/connector-plugins`. Config export (no secrets): [kafka-connect_connector_config_bulk_export](https://github.com/nwlterry/kafka-connect_connector_config_bulk_export).
+
+---
+
+See [GROUP.md](GROUP.md) for sibling repositories. Catalog: https://github.com/nwlterry/nwlterry
